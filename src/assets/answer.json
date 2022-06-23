@@ -1,0 +1,26 @@
+{
+    "answers":
+    [
+        {
+            "id":1,
+            "ans":"object-based"
+        },
+        {
+            "id":2,
+            "ans":"both var and let"
+        },
+        {
+            "id":3,
+            "ans":"const"
+        },
+        {
+            "id":4,
+            "ans":"is in"
+        },
+        {
+            "id":5,
+            "ans":"stringify()"
+        }
+
+    ]
+}

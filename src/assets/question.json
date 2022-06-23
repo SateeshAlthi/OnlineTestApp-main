@@ -1,0 +1,55 @@
+{
+    "questions":[
+        {
+            "id":1,
+            "questiontext":"Javascript is an _______ language?",
+            "option":[
+                {"opt":"object-oriented"},
+                {"opt":"object-based"},
+                {"opt" :"procedural"},
+                {"opt":"none"}
+    ]
+        },
+        {
+            "id":2,
+            "questiontext":"Which of the following keywords is used to define a variable in Javascript?",
+            "option":[
+            {"opt":"var"},
+            {"opt":"let"},
+            {"opt" :"both var and let"},
+            {"opt":"none"}
+        ]
+        },
+        {
+            "id":3,
+            "questiontext":"How can a datatype be declared to be a constant type?",
+            "option":[
+                {"opt":"const"},
+                {"opt":"var"},
+                {"opt" :"let"},
+                {"opt":"constant"}
+    ]
+        },
+        {
+            "id":4,
+            "questiontext":"What keyword is used to check whether a given property is valid or not?",
+            "option":[
+                {"opt":"in"},
+                {"opt":"is in"},
+                {"opt" :"exist"},
+                {"opt":"lies"}
+    ]
+        },
+        {
+            "id":5,
+            "questiontext":"Which function is used to serialize an object into a JSON string in Javascript?",
+            "option":[
+                {"opt":"stringify()"},
+                {"opt":" parse"},
+                {"opt" :"convert"},
+                {"opt":"none"}
+    ]
+        }
+        
+    ]
+}

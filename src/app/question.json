@@ -1,0 +1,34 @@
+[
+    {
+        "id":2,
+        "questiontext":"What is your name ?",
+        "a":"abc",
+        "b":"pqr",
+        "c" :"xyz",
+        "d":"lmn"
+    },
+    {
+        "id":2,
+        "question":"What is school name ?",
+        "a":"abc",
+        "b":"pqr",
+        "c" :"xyz",
+        "d":"lmn"
+    },
+    {
+        "id":2,
+        "question":"What is college name ?",
+        "a":"abc",
+        "b":"pqr",
+        "c" :"xyz",
+        "d":"lmn"
+    },
+    {
+        "id":2,
+        "question":"What is friend name ?",
+        "a":"abc",
+        "b":"pqr",
+        "c" :"xyz",
+        "d":"lmn"
+    }
+]

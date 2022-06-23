@@ -1,0 +1,72 @@
+<div class="container col-md-8">
+  <div class="d-flex justify-content-between p-3 bg-secondary">
+    <div>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo-WSFKtHUvpN70oho_xwzal1CmdUfM_VP0Q&usqp=CAU"
+        alt="quize"
+        name="javscript"
+      />
+    </div>
+    <div>
+      <h3>JavaScript Test</h3>
+      <span>Welcome {{ name }}</span
+      ><br />
+    </div>
+  </div>
+  <ng-container *ngIf="!isquizecompleted">
+    <div class="progress mt-3">
+      <div
+        class="progress-bar progress-bar-striped bg-success"
+        role="progressbar"
+        [ngStyle]="{ width: progress + '%' }"
+        aria-valuenow="25"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      ></div>
+    </div>
+    <div class="container mt-3">
+      <div class="question card justify-content-between py-6">
+        <h4>{{ questionList[currentquestion]?.questiontext }}</h4>
+        <div class="option mt-3 sm-3">
+          <ul *ngFor="let options of questionList[currentquestion]?.option">
+            <li (click)="answer(currentquestion + 1, options.opt)" class="list">
+              <div class="card">{{ options.opt }}</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container justify-content-between p-3 col-md-6">
+      <button
+        class="btn"
+        (click)="previousQuestion()"
+        [disabled]="currentquestion === 0" >
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6thY95OpcTD8aiP5lf9e4N14f2wEr6XTKEA&usqp=CAU"
+          alt="backward">
+      </button>
+      <button class="btn" (click)="resetQuize()">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJhqQFXrx_S_nQaVqGzwnXUzT-uMjXdRG8iA&usqp=CAU"
+          alt="refresh">
+      </button>
+      <button class="btn" (click)="nextQuestion()">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGTBebvtSG_32EDwrJSyw5x6AyUJje5_LKmg&usqp=CAU"
+          alt="forward ">
+      </button>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="isquizecompleted">
+    <div class="col d-flex justify-content-between mt-3" id="bgwin">
+      <div class="result text-center py-6">
+        <h3>Congradulations !!!!</h3>
+        <p>You have successfully completed the test</p>
+        <br />
+        <p>Below is your score :</p>
+        <br />
+        <p>Your score: {{ points }}</p>
+      </div>
+    </div>
+  </ng-container>
+</div>
